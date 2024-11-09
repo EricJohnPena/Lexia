@@ -15,6 +15,7 @@ public class UIMenuManager : MonoBehaviour
     //[SerializeField] Button loginBtn;
     [SerializeField] Button goToLoginBtn1; //from signup page
     [SerializeField] Button goToSignupBtn1; //from login page
+   
 
     
 

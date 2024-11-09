@@ -110,7 +110,7 @@ public Text warningRegisterText;
             User = LoginTask.Result.User;
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
-            
+            // UIMainMenuManager.InstanceMainMenu.displayText.text = "Hi "+ User.DisplayName + "," ;            
             SceneController.Instance.GoToMainMenu(); 
             //confirmLoginText.text = "Logged In";
         }

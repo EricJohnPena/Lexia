@@ -11,7 +11,8 @@ public class SceneController : MonoBehaviour
     }
     public enum Scene{
         LoginScene,
-        MenuScene
+        MenuScene, 
+        LoadingScene,
     }
     
     public void GoToScene(Scene sceneName)
@@ -24,7 +25,7 @@ public class SceneController : MonoBehaviour
     }
 
     public void GoToMainMenu(){
-        SceneManager.LoadScene(Scene.MenuScene.ToString());
+        SceneManager.LoadScene(Scene.LoadingScene.ToString());
         
     }
 
