@@ -61,6 +61,21 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+# Firebase-specific exclusions
+/[Aa]ssets/Firebase/
+/[Aa]ssets/PlayServicesResolver/
+/[Aa]ssets/Editor/ Default/ Resources/
+/[Aa]ssets/Firebase.meta
+/[Aa]ssets/PlayServicesResolver.meta
+/[Aa]ssets/Editor/ Default/ Resources.meta
+/[Aa]ssets/Plugins/Android/android.arch.*
+/[Aa]ssets/Plugins/Android/com.android.*
+/[Aa]ssets/Plugins/Android/com.crashlytics.*
+/[Aa]ssets/Plugins/Android/com.google.*
+/[Aa]ssets/Plugins/Android/firebase*
+/[Aa]ssets/Plugins/Android/Firebase.meta
+/[Aa]ssets/Plugins/Android/io.fabric.*
+
 # Crashlytics generated file
 crashlytics-build.properties
 
