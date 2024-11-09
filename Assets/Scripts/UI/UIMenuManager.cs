@@ -12,16 +12,16 @@ public class UIMenuManager : MonoBehaviour
 
     [SerializeField] Button goToLoginBtn;
     [SerializeField] Button goToSignupBtn;
-    [SerializeField] Button loginBtn;
+    //[SerializeField] Button loginBtn;
     [SerializeField] Button goToLoginBtn1; //from signup page
     [SerializeField] Button goToSignupBtn1; //from login page
 
     
 
 
-    [SerializeField] Canvas StartingPage;
-    [SerializeField] Canvas LoginPage;
-    [SerializeField] Canvas SignupPage;
+    public Canvas StartingPage;
+    public Canvas LoginPage;
+    public Canvas SignupPage;
 
    
    void Start(){
@@ -29,7 +29,7 @@ public class UIMenuManager : MonoBehaviour
     goToLoginBtn1.onClick.AddListener(() => OpenPage(LoginPage));
     goToSignupBtn.onClick.AddListener(() => OpenPage(SignupPage));
     goToSignupBtn1.onClick.AddListener(() => OpenPage(SignupPage));
-    loginBtn.onClick.AddListener(ToMenuScene);//for testing purposes only
+    //loginBtn.onClick.AddListener(ToMenuScene);//for testing purposes only
 
    }
 

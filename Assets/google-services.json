@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "286972151112",
+    "firebase_url": "https://lexia-database-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lexia-database",
+    "storage_bucket": "lexia-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286972151112:android:bceca5d2abbd4614885f7d",
+        "android_client_info": {
+          "package_name": "com.pena.LexiaApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5eUDH9-9e1w7IOsHq9LqKKDFCbyuAbNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
