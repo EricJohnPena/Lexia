@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 public class AuthManager : MonoBehaviour
 {
+
 //Firebase variables
 [Header("Firebase")]
 public DependencyStatus dependencyStatus;
@@ -49,11 +50,14 @@ public Text warningRegisterText;
     }
 
     private void InitializeFirebase()
+{
+    Debug.Log("Setting up Firebase Auth");
+    auth = FirebaseAuth.DefaultInstance;
+    if (auth == null)
     {
-        Debug.Log("Setting up Firebase Auth");
-        //Set the authentication instance object
-        auth = FirebaseAuth.DefaultInstance;
+        Debug.LogError("Firebase Auth instance is null!");
     }
+}
 
     //Function for the login button
     public void LoginButton()
@@ -109,8 +113,9 @@ public Text warningRegisterText;
             //Now get the result
             User = LoginTask.Result.User;
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
-            warningLoginText.text = "";
-            // UIMainMenuManager.InstanceMainMenu.displayText.text = "Hi "+ User.DisplayName + "," ;            
+            warningLoginText.text = "";    
+            PlayerPrefs.SetString("UserName", User.DisplayName);
+            PlayerPrefs.SetString("UserEmail", User.Email);
             SceneController.Instance.GoToMainMenu(); 
             //confirmLoginText.text = "Logged In";
         }

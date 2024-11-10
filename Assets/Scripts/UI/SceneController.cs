@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 { 
-    public static SceneController Instance;
-    private void Awake(){
+    public static SceneController Instance { get; private set; }
+   void Awake() {
+    if (Instance == null) {
         Instance = this;
+        
     }
+}
     public enum Scene{
         LoginScene,
         MenuScene, 
